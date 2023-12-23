@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import { SimpleBox } from "../ui/SimpleBox";
+import { SimpleBox } from "../ui/box/SimpleBox";
 import { siteMetaData } from "@/data/siteMetaData";
 import Image from "next/image";
 import { TbBrandNextjs } from "react-icons/tb";
@@ -16,13 +16,18 @@ export const BlogCard = () => {
     )
       .then((res) => res.json())
       .then((res) => {
-        console.log(res);
         setImageUrl(res.hybridGraph.favicon);
       });
   }, []);
   return (
     <SimpleBox>
-      <TbBrandNextjs size="50" color="blue" />
+      <Image
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+        alt="nextjs icon"
+        width={100}
+        height={100}
+      />
+
       {/* <Image src={imageUrl} alt="blog thumbnail" width={480} height={400} /> */}
     </SimpleBox>
   );
