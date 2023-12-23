@@ -1,20 +1,25 @@
-"use client";
-import { BlogCard } from "@/components/blog-card/BlogCard";
 import { GithubCalendarBox } from "@/components/github-calendar";
+import { Overview } from "@/components/overview";
 import { ProfileCard } from "@/components/profile";
-import { useTheme } from "next-themes";
+import { JigglerContextProvider } from "@/context/jiggler";
 
 export const Home = () => {
-  const { theme } = useTheme();
   return (
-    <section className="flex h-[70rem] w-full justify-center py-28">
-      <div className="flex max-w-7xl justify-center md:w-[75%] lg:w-[65%]">
-        <ProfileCard />
-        <div className="ml-4 flex flex-grow flex-col overflow-hidden">
-          <BlogCard />
-          <GithubCalendarBox />
+    <JigglerContextProvider>
+      <section className="flex w-screen justify-center sm:w-full">
+        <div className="flex w-full flex-col justify-center px-2 py-32 sm:flex-row sm:px-[5%] md:w-[80%] lg:w-[70%]">
+          <div className="flex flex-col items-center justify-start sm:flex-[1] sm:items-end">
+            <div className="h-8" />
+            <ProfileCard />
+          </div>
+          <div className="flex flex-col gap-8 overflow-x-hidden overflow-y-visible sm:flex-[2] sm:pl-8 min-[1800px]:overflow-visible">
+            <div></div>
+            <Overview />
+            <GithubCalendarBox />
+            <div></div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </JigglerContextProvider>
   );
 };
