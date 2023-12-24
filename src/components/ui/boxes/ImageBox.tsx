@@ -1,22 +1,27 @@
 "use client";
 import Image from "next/image";
-import { useRealTheme } from "../../hooks/useRealTheme";
 import { cn } from "@/lib/utils";
-import clsx from "clsx";
+import { useRealTheme } from "@/hooks/useRealTheme";
 
-type TSkillImageProps = {
+export type TImageBoxProps = {
   defaultImage: string;
+  alt: string;
   darkModeImage?: string;
   className?: string;
+  imageStyle?: string;
 };
-export const SkillImage = ({
+export const ImageBox = ({
   defaultImage,
   darkModeImage,
+  alt,
   className,
-}: TSkillImageProps) => {
+  imageStyle,
+}: TImageBoxProps) => {
   const realTheme = useRealTheme();
   return (
-    <div className={clsx("relative", className)}>
+    <div
+      className={cn("relative w-full overflow-hidden rounded-lg", className)}
+    >
       <Image
         src={
           darkModeImage != null && realTheme === "dark"
@@ -24,8 +29,8 @@ export const SkillImage = ({
             : defaultImage
         }
         fill
-        alt="nextjs icon"
-        className="object-contain"
+        alt={alt}
+        className={cn("object-cover", imageStyle)}
       />
     </div>
   );

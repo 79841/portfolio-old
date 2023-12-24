@@ -5,8 +5,8 @@ import { useGithubTerm } from "@/hooks/useGithubTerm";
 import { useRealTheme } from "@/hooks/useRealTheme";
 import GitHubCalendar from "react-github-calendar";
 import { GithubLinkTitle } from "./GithubLInkTitle";
-import { SimpleBox } from "../ui/box/SimpleBox";
-import { JiggleBox } from "../ui/box/JiggleBox";
+import { SimpleBox } from "../../../../components/ui/boxes/SimpleBox";
+import { JiggleBox } from "../../../../components/ui/boxes/JiggleBox";
 
 type TDay = {
   date: string;
@@ -42,32 +42,31 @@ export const GithubCalendarBox = () => {
   const [term, calendarRef] = useGithubTerm();
 
   return (
-    <div
-      className="flex w-full justify-center sm:justify-start"
-      ref={calendarRef}
-    >
-      <JiggleBox>
-        <SimpleBox>
-          <GithubLinkTitle />
-          <div className="overflow-hidden">
-            <GitHubCalendar
-              username={siteMetaData.githubUsername}
-              hideMonthLabels
-              hideColorLegend
-              colorScheme={realTheme}
-              blockSize={13}
-              blockMargin={2}
-              transformData={selectTerm(term)}
-              labels={{
-                totalCount:
-                  term === 1
-                    ? "{{count}} contributions in the month"
-                    : `{{count}} contributions in the ${term} months`,
-              }}
-            />
-          </div>
-        </SimpleBox>
-      </JiggleBox>
+    <div className="flex w-full justify-start" ref={calendarRef}>
+      {/* <JiggleBox>
+        <SimpleBox> */}
+      <div className="flex flex-col">
+        <GithubLinkTitle />
+        <div className="overflow-hidden">
+          <GitHubCalendar
+            username={siteMetaData.githubUsername}
+            hideMonthLabels
+            hideColorLegend
+            colorScheme={realTheme}
+            blockSize={13}
+            blockMargin={2}
+            transformData={selectTerm(term)}
+            labels={{
+              totalCount:
+                term === 1
+                  ? "{{count}} contributions in the month"
+                  : `{{count}} contributions in the ${term} months`,
+            }}
+          />
+        </div>
+      </div>
+      {/* </SimpleBox>
+      </JiggleBox> */}
     </div>
   );
 };

@@ -1,7 +1,7 @@
 "use client";
 import { cn } from "@/lib/utils";
-import { SimpleBox, TSimpleBoxProps } from "./SimpleBox";
-import { forwardRef, useEffect, useRef } from "react";
+import { TSimpleBoxProps } from "./SimpleBox";
+import { useEffect, useRef } from "react";
 import { useJigglerContext } from "@/context/jiggler";
 
 type TJiggleBoxProps = TSimpleBoxProps;
@@ -15,6 +15,7 @@ export const JiggleBox = ({
 
   useEffect(() => {
     if (jiggleStyle == null || ref == null || ref.current == null) return;
+    if (window.screen.width < 640) return;
     ref.current.style.transform = jiggleStyle.rotateStyle;
   }, [jiggleStyle]);
 

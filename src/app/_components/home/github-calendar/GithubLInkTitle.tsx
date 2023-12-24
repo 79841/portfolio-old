@@ -5,7 +5,7 @@ import { memo } from "react";
 
 export const GithubLinkTitle = memo(function GithubLinkTitle() {
   return (
-    <div>
+    <div className="pb-2">
       <Link href={siteMetaData.githubUrl}>
         <div className="flex items-center">
           <GitHubLogoIcon width={20} height={20} />

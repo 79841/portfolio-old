@@ -10,7 +10,7 @@ export const useGithubTerm = () => {
         return;
       }
       const boxWidth = ref.current.offsetWidth;
-      const interval = Math.floor(boxWidth / 65) - 1;
+      const interval = Math.floor(boxWidth / 65);
       if (term != interval) setTerm(interval);
     };
 
