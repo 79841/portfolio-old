@@ -20,7 +20,7 @@ export const siteMetaData = {
         name: "React",
       },
       redux: {
-        defaultImage: "/images/skills/Redux-original.svg",
+        defaultImage: "/images/skills/redux-original.svg",
         name: "Redux",
       },
       nextjs: {
