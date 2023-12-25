@@ -1,15 +1,11 @@
-import { ImageCardWithTooltip } from "../../ui/cards";
+import { ImageCardWithTooltip } from "@/components/ui/cards";
 
-type TTanstackQueryCardProps = {
-  className: string;
-};
-export const TanstackQueryCard = ({ className }: TTanstackQueryCardProps) => {
+export const TanstackQueryCard = () => {
   return (
     <>
       <ImageCardWithTooltip
         defaultImage="/images/skills/tanstack-original.png"
         alt="Tanstack"
-        className={className}
       />
     </>
   );

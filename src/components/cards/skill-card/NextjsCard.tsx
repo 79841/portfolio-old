@@ -1,15 +1,11 @@
-import { ImageCardWithTooltip } from "../../ui/cards";
+import { ImageCardWithTooltip } from "@/components/ui/cards";
 
-type TNextjsCardProps = {
-  className: string;
-};
-export const NextjsCard = ({ className }: TNextjsCardProps) => {
+export const NextjsCard = () => {
   return (
     <>
       <ImageCardWithTooltip
         defaultImage="/images/skills/nextjs-original.svg"
         darkModeImage="/images/skills/nextjs-white.svg"
-        className={className}
         alt="Nextjs"
       />
     </>

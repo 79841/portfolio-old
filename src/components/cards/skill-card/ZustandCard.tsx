@@ -1,15 +1,11 @@
-import { ImageCardWithTooltip } from "../../ui/cards";
+import { ImageCardWithTooltip } from "@/components/ui/cards";
 
-type TZustandCardProps = {
-  className: string;
-};
-export const ZustandCard = ({ className }: TZustandCardProps) => {
+export const ZustandCard = () => {
   return (
     <>
       <ImageCardWithTooltip
         defaultImage="/images/skills/bear.jpg"
         alt="Zustand"
-        className={className}
       />
     </>
   );

@@ -1,14 +1,10 @@
-import { ImageCardWithTooltip } from "../../ui/cards";
+import { ImageCardWithTooltip } from "@/components/ui/cards";
 
-type TReactCardProps = {
-  className: string;
-};
-export const ReactCard = ({ className }: TReactCardProps) => {
+export const ReactCard = () => {
   return (
     <>
       <ImageCardWithTooltip
         defaultImage="/images/skills/react-original.svg"
-        className={className}
         alt="React"
       />
     </>

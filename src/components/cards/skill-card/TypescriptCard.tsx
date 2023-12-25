@@ -1,14 +1,10 @@
-import { ImageCardWithTooltip } from "../../ui/cards";
+import { ImageCardWithTooltip } from "@/components/ui/cards";
 
-type TTypescriptCardProps = {
-  className: string;
-};
-export const TypescriptCard = ({ className }: TTypescriptCardProps) => {
+export const TypescriptCard = () => {
   return (
     <>
       <ImageCardWithTooltip
         defaultImage="/images/skills/typescript-original.svg"
-        className={className}
         alt="Typescript"
       />
     </>
