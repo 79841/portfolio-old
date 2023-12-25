@@ -1,9 +1,11 @@
-import { Home } from "./_components/home";
+import { HomeSection } from "./_components/home-section";
+import { SkillsSection } from "./_components/skills-section/SkillsSection";
 
 export default function HomePage() {
   return (
     <main>
-      <Home />
+      <HomeSection />
+      <SkillsSection />
     </main>
   );
 }
