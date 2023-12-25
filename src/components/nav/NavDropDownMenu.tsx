@@ -36,7 +36,7 @@ export const NavDropDownMenu = () => {
         <DropdownMenuLabel>Menu</DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuItem>
-          <Link href="/" legacyBehavior passHref>
+          <Link href="/#home" legacyBehavior passHref>
             Home
           </Link>
         </DropdownMenuItem>
