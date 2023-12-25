@@ -20,7 +20,7 @@ export const ImageBox = ({
   const realTheme = useRealTheme();
   return (
     <div
-      className={cn("relative w-full overflow-hidden rounded-lg", className)}
+      className={cn("relative h-20 w-20 overflow-hidden rounded-lg", className)}
     >
       <Image
         src={
