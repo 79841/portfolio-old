@@ -7,7 +7,7 @@ const nextConfig = {
         hostname: "**",
       },
     ],
-    images: { unoptimized: true },
+    unoptimized: true,
   },
   output: "export",
 };
