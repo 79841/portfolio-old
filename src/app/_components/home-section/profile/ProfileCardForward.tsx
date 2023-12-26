@@ -38,25 +38,27 @@ export const ProfileCardForward = ({ isFlipped }: TProfileCardForward) => {
           <CardDescription>About</CardDescription>
         </CardHeader>
         <CardContent className="flex flex-col gap-4">
-          <ProfileInfo Icon={IoMdPerson}>{"명인지"}</ProfileInfo>
+          <ProfileInfo Icon={IoMdPerson}>{siteMetaData.name}</ProfileInfo>
           <ProfileInfo Icon={RiPencilFill}>
             <div>
-              {`서울과학기술대학교`}
+              {siteMetaData.university}
               <br />
-              {`산업정보시스템 전공`}
+              {`${siteMetaData.major} 전공`}
               <br />
-              {`(컴퓨터공학 복수 전공)`}
+              {`${siteMetaData.doubleMajor} 복수 전공`}
             </div>
           </ProfileInfo>
           <ProfileInfo Icon={FaCalendar}>
-            <div>{`1997.10.10.`}</div>
+            <div>{siteMetaData.birthday}</div>
           </ProfileInfo>
           <ProfileInfo Icon={MdPlace}>
-            <div>{`서울 구로구 고척동`}</div>
+            <div>{siteMetaData.address}</div>
           </ProfileInfo>
           <ProfileInfo Icon={MdEmail}>
             <div>
-              <Link href="mailto:79841@naver.com">79841@naver.com</Link>
+              <Link href={`mailto:${siteMetaData.primaryEmail}`}>
+                {siteMetaData.primaryEmail}
+              </Link>
             </div>
           </ProfileInfo>
         </CardContent>

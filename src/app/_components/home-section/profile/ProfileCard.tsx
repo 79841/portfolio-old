@@ -15,12 +15,8 @@ export function ProfileCard() {
     <JiggleBox>
       <div className="group relative flex w-fit">
         <div onClick={handleFilpped} className={cn("relative")}>
-          {/* <div
-            className="absolute left-0 top-0 z-50 w-full duration-1000 [backface-visibility:hidden] group-hover:[transform:rotateY(180deg)]"
-          > */}
           <ProfileCardForward isFlipped={isFlipped} />
           <ProfileCardBackward isFlipped={isFlipped} />
-          {/* <div className="left-0 top-0 -z-10 duration-1000 [backface-visibility:hidden] [transform:rotateY(180deg)] group-hover:[transform:rotateY(360deg)]"> */}
         </div>
       </div>
     </JiggleBox>
