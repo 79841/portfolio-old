@@ -8,10 +8,10 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { HamburgerMenuIcon, MoonIcon, SunIcon } from "@radix-ui/react-icons";
-import { Button } from "../ui/button";
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import { MouseEventHandler } from "react";
+import { siteMap } from "@/data";
 
 export const NavDropDownMenu = () => {
   const { theme, setTheme } = useTheme();
@@ -27,31 +27,31 @@ export const NavDropDownMenu = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger>
-        <Button variant="outline" size="icon">
+        <div className="inline-flex h-10 w-10 items-center justify-center whitespace-nowrap rounded-md border border-input bg-background text-sm font-medium ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50">
           <HamburgerMenuIcon className="absolute h-[1.2rem] w-[1.2rem] scale-100 transition-all" />
           <span className="sr-only">Menu</span>
-        </Button>
+        </div>
       </DropdownMenuTrigger>
       <DropdownMenuContent>
         <DropdownMenuLabel>Menu</DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuItem>
-          <Link href="/#home" legacyBehavior passHref>
+          <Link href={siteMap.home} legacyBehavior passHref>
             Home
           </Link>
         </DropdownMenuItem>
         <DropdownMenuItem>
-          <Link href="/" legacyBehavior passHref>
+          <Link href={siteMap.skills} legacyBehavior passHref>
             Skills
           </Link>
         </DropdownMenuItem>
         <DropdownMenuItem>
-          <Link href="/" legacyBehavior passHref>
+          <Link href={siteMap.experience} legacyBehavior passHref>
             Experience
           </Link>
         </DropdownMenuItem>
         <DropdownMenuItem>
-          <Link href="/" legacyBehavior passHref>
+          <Link href={siteMap.projects} legacyBehavior passHref>
             Projects
           </Link>
         </DropdownMenuItem>
