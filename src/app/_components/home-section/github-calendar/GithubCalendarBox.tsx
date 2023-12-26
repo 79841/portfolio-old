@@ -5,8 +5,6 @@ import { useGithubTerm } from "@/hooks/useGithubTerm";
 import { useRealTheme } from "@/hooks/useRealTheme";
 import GitHubCalendar from "react-github-calendar";
 import { GithubLinkTitle } from "./GithubLInkTitle";
-import { SimpleBox } from "../../../../components/ui/boxes/SimpleBox";
-import { JiggleBox } from "../../../../components/ui/boxes/JiggleBox";
 
 type TDay = {
   date: string;
@@ -46,8 +44,6 @@ export const GithubCalendarBox = () => {
       className="flex w-full justify-center sm:justify-start"
       ref={calendarRef}
     >
-      {/* <JiggleBox> */}
-      {/* <SimpleBox> */}
       <div className="flex flex-col items-center sm:items-start">
         <GithubLinkTitle />
         <div className="overflow-hidden">
@@ -68,8 +64,6 @@ export const GithubCalendarBox = () => {
           />
         </div>
       </div>
-      {/* </SimpleBox> */}
-      {/* </JiggleBox> */}
     </div>
   );
 };
