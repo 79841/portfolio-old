@@ -7,7 +7,7 @@ export const ProjectsSection = () => {
   return (
     <SectionContainer>
       <ProjectsSectionBanner />
-      <div className="flex flex-wrap justify-center gap-20 sm:py-24">
+      <div className="flex flex-wrap justify-center gap-20 sm:py-36">
         {siteMetaData.projects.map((project) => (
           <ProjectCard key={project.name} project={project} />
         ))}
