@@ -1,6 +1,6 @@
 import { SectionContainer } from "../SectionContainer";
 import { Preview } from "./preview";
-import { ProfileCard } from "./profile";
+import { ProfileCard } from "./profile-card";
 import { JigglerContextProvider } from "@/context/jiggler";
 
 export const HomeSection = () => {
