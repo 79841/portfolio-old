@@ -16,11 +16,11 @@ type TProjectDataProps = {
 };
 export const ProjectCard = ({ project }: TProjectDataProps) => {
   return (
-    <SimpleBox className="flex justify-center gap-12 sm:flex-row">
+    <SimpleBox className="flex max-w-[100%] items-center justify-center gap-12 sm:flex-row">
       <div className="relative h-[20rem] w-full rounded-md bg-secondary sm:h-full sm:w-96">
         {project.images && (
           <Image
-            className="rounded object-cover object-top sm:object-contain"
+            className="rounded object-cover object-top sm:object-contain sm:object-center"
             src={project.images[0]}
             alt={project.name}
             fill
@@ -28,8 +28,8 @@ export const ProjectCard = ({ project }: TProjectDataProps) => {
         )}
       </div>
       <div className="hidden h-[80%] border sm:block"></div>
-      <div className="flex w-full flex-col justify-center gap-6 sm:w-[30rem]">
-        <div className="">
+      <div className="flex w-full flex-grow flex-col justify-center gap-6 sm:w-[30rem]">
+        <div>
           <h1 className="mb-2 text-xl font-semibold">{project.name}</h1>
           <div className="text-sm text-muted-foreground">
             {project.description}
