@@ -15,6 +15,8 @@ import {
   BobCard,
   TossCard,
 } from "@/components/cards/experience-card";
+import Link from "next/link";
+import { siteMap, siteMetaData } from "@/data";
 
 export const Preview = () => {
   return (
@@ -26,7 +28,7 @@ export const Preview = () => {
       <div className="flex flex-col gap-8 sm:pl-4">
         <div>
           <h1 className="ml-1 flex justify-center pb-2 text-xl font-semibold sm:justify-start">
-            Skills
+            <Link href={siteMap.skills}>Skills</Link>
           </h1>
           <div className="inline-flex flex-row flex-wrap justify-center gap-4 sm:justify-start">
             <JavascriptCard />
@@ -40,7 +42,7 @@ export const Preview = () => {
         </div>
         <div className="flex flex-col items-center sm:items-start">
           <h1 className="ml-1 flex justify-center pb-2 text-xl font-semibold sm:justify-start">
-            Experience
+            <Link href={siteMap.experience}>Experience</Link>
           </h1>
           <div className="inline-flex flex-row flex-wrap justify-center gap-4 sm:justify-start">
             <BobCard />
