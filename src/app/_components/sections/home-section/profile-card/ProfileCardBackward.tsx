@@ -28,15 +28,15 @@ export const ProfileCardBackward = ({ isFlipped }: TProfileCardBackWard) => {
       <Card className="w-fit sm:w-[350px]">
         <CardHeader>
           <ProfileImage />
-          <CardTitle>저는...!</CardTitle>
+          <CardTitle>저는...</CardTitle>
           <CardDescription>
-            보안전문가에서 프론트엔드 개발자로!!
+            보안전문가에서 프론트엔드 개발자로..
           </CardDescription>
         </CardHeader>
         <CardContent>
           <div className="mb-4">
             <h3 className="pb-2 text-2xl font-semibold leading-none tracking-tight">
-              함께 성장하고 발전하는!
+              함께 성장하고 발전하는
             </h3>
             <CardDescription>
               함께 공부하고 기술리뷰하는 것을 좋아합니다. 협업과 팀 프로젝트를
@@ -45,7 +45,7 @@ export const ProfileCardBackward = ({ isFlipped }: TProfileCardBackWard) => {
           </div>
           <div className="mb-4">
             <h3 className="pb-2 text-2xl font-semibold leading-none tracking-tight">
-              자바스크립트에 환장한!
+              자바스크립트에 환장한
             </h3>
             <CardDescription>
               개발자로 전향한 기간은 길지 않지만 컴퓨터 보안을 할 때부터
@@ -55,7 +55,7 @@ export const ProfileCardBackward = ({ isFlipped }: TProfileCardBackWard) => {
           </div>
           <div className="mb-4">
             <h3 className="pb-2 text-2xl font-semibold leading-none tracking-tight">
-              개발 트렌드에 민감한!
+              개발 트렌드에 민감한
             </h3>
             <CardDescription>
               새로운 기술을 사용하고 적용하는 것에 익숙하며 기존에 사용하고 있는
@@ -64,7 +64,7 @@ export const ProfileCardBackward = ({ isFlipped }: TProfileCardBackWard) => {
           </div>
           <div>
             <h3 className="pb-2 text-2xl font-semibold leading-none tracking-tight">
-              개발자 입니다!
+              개발자 입니다
             </h3>
           </div>
         </CardContent>
