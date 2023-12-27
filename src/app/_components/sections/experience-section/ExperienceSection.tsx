@@ -6,7 +6,7 @@ export const ExperienceSection = () => {
   return (
     <SectionContainer>
       <ExperienceSectionBanner />
-      <div className="sm:py-24">
+      <div className="sm:py-36">
         <ExperienceTimeline />
       </div>
     </SectionContainer>
