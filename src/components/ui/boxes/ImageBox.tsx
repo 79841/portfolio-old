@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { useRealTheme } from "@/hooks/useRealTheme";
-import { useEffect, useState } from "react";
+import { memo, useEffect, useState } from "react";
 
 export type TImageBoxProps = {
   defaultImage: string;
@@ -11,13 +11,13 @@ export type TImageBoxProps = {
   className?: string;
   imageStyle?: string;
 };
-export const ImageBox = ({
+export const ImageBox = memo(function ImageBox({
   defaultImage,
   darkModeImage,
   alt,
   className,
   imageStyle,
-}: TImageBoxProps) => {
+}: TImageBoxProps) {
   const realTheme = useRealTheme();
   const [imagePath, setImagePath] = useState(defaultImage);
   useEffect(() => {
@@ -40,4 +40,4 @@ export const ImageBox = ({
       />
     </div>
   );
-};
+});
