@@ -1,3 +1,5 @@
+import { experienceList } from "./experienceList";
+import { projectList } from "./projectList";
 import { skillList } from "./skillList";
 
 export const siteMetaData = {
@@ -14,4 +16,6 @@ export const siteMetaData = {
   githubUsername: "79841",
   username: "LEtMeDEv",
   skills: skillList,
+  experiences: experienceList,
+  projects: projectList,
 };
