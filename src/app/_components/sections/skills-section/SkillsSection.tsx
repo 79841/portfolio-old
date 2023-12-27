@@ -11,7 +11,7 @@ import {
 
 export const SkillsSection = () => {
   return (
-    <SectionContainer>
+    <SectionContainer id="skills">
       <div className="flex flex-col sm:gap-24">
         <SkillsSectionBanner />
         <div className="w-full py-24">

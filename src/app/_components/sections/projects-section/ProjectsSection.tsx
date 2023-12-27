@@ -5,7 +5,7 @@ import { ProjectCard } from "./ProjectCard";
 
 export const ProjectsSection = () => {
   return (
-    <SectionContainer>
+    <SectionContainer id="projects">
       <ProjectsSectionBanner />
       <div className="flex flex-wrap justify-center gap-20 sm:py-36">
         {siteMetaData.projects.map((project) => (

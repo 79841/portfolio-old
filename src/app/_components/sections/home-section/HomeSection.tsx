@@ -6,7 +6,7 @@ import { JigglerContextProvider } from "@/context/jiggler";
 export const HomeSection = () => {
   return (
     <JigglerContextProvider>
-      <SectionContainer>
+      <SectionContainer id="home">
         <div className="flex flex-col sm:flex-row sm:gap-20">
           <div className="flex flex-col items-end justify-start sm:flex-[1]">
             <ProfileCard />
