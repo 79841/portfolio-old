@@ -12,7 +12,7 @@ import {
 export const SkillsSection = () => {
   return (
     <SectionContainer>
-      <div>
+      <div className="flex flex-col sm:gap-24">
         <SkillsSectionBanner />
         <div className="w-full py-24">
           <div className="flex flex-col justify-evenly gap-24">
