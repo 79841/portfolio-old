@@ -64,7 +64,7 @@ export const ProfileCardBackward = ({ isFlipped }: TProfileCardBackWard) => {
           </div>
           <div>
             <h3 className="pb-2 text-2xl font-semibold leading-none tracking-tight">
-              개발자 입니다
+              개발자 입니다.
             </h3>
           </div>
         </CardContent>
