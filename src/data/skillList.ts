@@ -1,6 +1,6 @@
-import { SkillData } from "@/types/SkillData";
+import { TSkillData } from "@/types/SkillData";
 
-export const skillList: Record<string, Record<string, SkillData>> = {
+export const skillList: Record<string, Record<string, TSkillData>> = {
   frontEnd: {
     javascript: {
       name: "Javascript",
