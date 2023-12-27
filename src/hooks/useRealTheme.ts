@@ -8,14 +8,14 @@ type TRealTheme = "light" | "dark" | undefined;
 export const useRealTheme = (): TRealTheme => {
   const { theme } = useTheme();
 
-  const getSystemTheme = () => {
-    if (typeof window === "undefined") return undefined;
-    return window.matchMedia("(prefers-color-scheme: dark)").matches
-      ? "dark"
-      : "light";
-  };
-  const [realTheme, setRealTheme] = useState<TRealTheme>(getSystemTheme());
+  const [realTheme, setRealTheme] = useState<TRealTheme>(undefined);
   useEffect(() => {
+    const getSystemTheme = () => {
+      if (typeof window === "undefined") return undefined;
+      return window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark"
+        : "light";
+    };
     if (theme === "system") {
       setRealTheme((prev) => getSystemTheme());
     } else {
