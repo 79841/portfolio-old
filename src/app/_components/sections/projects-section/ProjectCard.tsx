@@ -1,12 +1,4 @@
 import { SimpleBox } from "@/components/ui/boxes/SimpleBox";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
 import { TProjectData } from "@/types/ProjectData";
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
@@ -17,7 +9,7 @@ type TProjectDataProps = {
 export const ProjectCard = ({ project }: TProjectDataProps) => {
   return (
     <SimpleBox className="flex max-w-[100%] items-center justify-center gap-12 sm:flex-row">
-      <div className="relative h-[20rem] w-full rounded-md bg-secondary sm:h-full sm:w-96">
+      <div className="relative h-[20rem] w-full overflow-hidden rounded-lg bg-secondary sm:h-full sm:w-96">
         {project.images && (
           <Image
             className="rounded object-cover object-top sm:object-contain sm:object-center"
@@ -36,7 +28,7 @@ export const ProjectCard = ({ project }: TProjectDataProps) => {
           </div>
         </div>
         <div className="mb-4 text-sm">{project.content}</div>
-        <div className="flex gap-2">
+        <div className="flex flex-wrap gap-2">
           {project.techStack.map((tech) => (
             <Badge key={tech} variant="secondary">
               {tech}
