@@ -32,13 +32,12 @@ export const projectList: TProjectData[] = [
     ],
   },
   {
-    name: "DreamShare",
+    name: "Dream Share",
     description: "서로의 꿈을 공유하는 앱입니다.",
     content:
       "꿈 일기를 작성하고 공유하는 앱입니다. 현재 개발 중인 3인 프로젝트로 웹과 앱 개발을 동시에 진행하고 있습니다. 프론트엔드와 앱 개발을 맡고 있으며 백엔드는 코드리뷰로 참여하고 있습니다. Jira와 Slack을 통해 협업하고 있으면 Agile 방법론으로 개발하고 있습니다. 프로젝트 초기부터 체계적으로 설계한 프로젝트이고 Slack과 코드리뷰를 통해 적극적인 협업 중인 프로젝트이기에 의미가 큽니다. 또한 카카오와 구글 등의 소셜로그인을 구현하면서 OAuth와 OIDC에 대한 개념을 다질 수 있었습니다.",
     techStack: ["Next.js", "Recoil", "Flutter", "Spring Boot", "Mysql"],
     date: "2023.10. ~ ",
-    images: ["/images/projects/dream-share/dream-share.png"],
     github: ["https://github.com/Dream-share"],
   },
   {
