@@ -11,35 +11,35 @@ import {
   NavigationMenuList,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import { siteMap } from "@/data";
+import { headerNavLinks } from "@/data";
 
 export function NavMenu() {
   return (
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <Link href={siteMap.home} legacyBehavior passHref>
+          <Link href={headerNavLinks.home} legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Home
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href={siteMap.skills} legacyBehavior passHref>
+          <Link href={headerNavLinks.skills} legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Skills
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href={siteMap.experience} legacyBehavior passHref>
+          <Link href={headerNavLinks.experience} legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Experience
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href={siteMap.projects} legacyBehavior passHref>
+          <Link href={headerNavLinks.projects} legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Projects
             </NavigationMenuLink>

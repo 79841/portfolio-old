@@ -1,11 +1,11 @@
 import { SkillBox } from "../SkillBox";
-import { siteMetaData } from "@/data/siteMetaData";
 import { SkillCategoryContainer } from "./SkillCategoryContainer";
+import { skillsData } from "@/data/";
 
 export const BackEndSkills = () => {
   return (
     <SkillCategoryContainer title="Back-End">
-      {Object.values(siteMetaData.skills.backEnd).map((skill) => (
+      {Object.values(skillsData.backEnd).map((skill) => (
         <SkillBox key={skill.name} {...skill} />
       ))}
     </SkillCategoryContainer>

@@ -11,7 +11,7 @@ import { HamburgerMenuIcon, MoonIcon, SunIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import { MouseEventHandler } from "react";
-import { siteMap } from "@/data";
+import { headerNavLinks } from "@/data";
 
 export const NavDropDownMenu = () => {
   const { theme, setTheme } = useTheme();
@@ -36,22 +36,22 @@ export const NavDropDownMenu = () => {
         <DropdownMenuLabel>Menu</DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuItem>
-          <Link href={siteMap.home} legacyBehavior passHref>
+          <Link href={headerNavLinks.home} legacyBehavior passHref>
             Home
           </Link>
         </DropdownMenuItem>
         <DropdownMenuItem>
-          <Link href={siteMap.skills} legacyBehavior passHref>
+          <Link href={headerNavLinks.skills} legacyBehavior passHref>
             Skills
           </Link>
         </DropdownMenuItem>
         <DropdownMenuItem>
-          <Link href={siteMap.experience} legacyBehavior passHref>
+          <Link href={headerNavLinks.experience} legacyBehavior passHref>
             Experience
           </Link>
         </DropdownMenuItem>
         <DropdownMenuItem>
-          <Link href={siteMap.projects} legacyBehavior passHref>
+          <Link href={headerNavLinks.projects} legacyBehavior passHref>
             Projects
           </Link>
         </DropdownMenuItem>

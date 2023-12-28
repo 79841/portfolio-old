@@ -1,6 +1,6 @@
 "use client";
 
-import { siteMetaData } from "@/data/siteMetaData";
+import { siteMetadata } from "@/data/siteMetadata";
 import { useGithubTerm } from "@/hooks/useGithubTerm";
 import { useRealTheme } from "@/hooks/useRealTheme";
 import GitHubCalendar from "react-github-calendar";
@@ -48,7 +48,7 @@ export const GithubCalendarBox = () => {
         <GithubLinkTitle />
         <div className="overflow-hidden">
           <GitHubCalendar
-            username={siteMetaData.githubUsername}
+            username={siteMetadata.githubUsername}
             hideMonthLabels
             hideColorLegend
             colorScheme={realTheme}

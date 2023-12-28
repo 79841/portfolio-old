@@ -1,7 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
 import { SimpleBox } from "../../ui/boxes/SimpleBox";
-import { siteMetaData } from "@/data/siteMetaData";
 import Image from "next/image";
 import { TbBrandNextjs } from "react-icons/tb";
 

@@ -13,7 +13,7 @@ import { GradientText } from "@/components/gradient-text";
 import { ProfileInfo } from "./ProfileInfo";
 import { IoMdPerson } from "react-icons/io";
 import { RiPencilFill } from "react-icons/ri";
-import { siteMetaData } from "@/data/siteMetaData";
+import { siteMetadata } from "@/data/siteMetadata";
 import { FaCalendar } from "react-icons/fa6";
 import { MdEmail, MdPlace } from "react-icons/md";
 import Link from "next/link";
@@ -41,41 +41,41 @@ export const ProfileCardForward = ({
         <CardHeader>
           <ProfileImage />
           <CardTitle>
-            <GradientText content={siteMetaData.username} />
+            <GradientText content={siteMetadata.username} />
           </CardTitle>
           <CardDescription>About</CardDescription>
         </CardHeader>
         <CardContent className="flex flex-col gap-4">
-          <ProfileInfo Icon={IoMdPerson}>{siteMetaData.name}</ProfileInfo>
+          <ProfileInfo Icon={IoMdPerson}>{siteMetadata.name}</ProfileInfo>
           <ProfileInfo Icon={RiPencilFill}>
             <div>
-              {siteMetaData.university}
+              {siteMetadata.university}
               <br />
-              {`${siteMetaData.major} 전공`}
+              {`${siteMetadata.major} 전공`}
               <br />
-              {`${siteMetaData.doubleMajor} 복수 전공`}
+              {`${siteMetadata.doubleMajor} 복수 전공`}
             </div>
           </ProfileInfo>
           <ProfileInfo Icon={FaCalendar}>
-            <div>{siteMetaData.birthday}</div>
+            <div>{siteMetadata.birthday}</div>
           </ProfileInfo>
           <ProfileInfo Icon={MdPlace}>
-            <div>{siteMetaData.address}</div>
+            <div>{siteMetadata.address}</div>
           </ProfileInfo>
           <ProfileInfo Icon={MdEmail}>
-            <Link href={`mailto:${siteMetaData.primaryEmail}`}>
-              {siteMetaData.primaryEmail}
+            <Link href={`mailto:${siteMetadata.primaryEmail}`}>
+              {siteMetadata.primaryEmail}
             </Link>
           </ProfileInfo>
           <ProfileInfo Icon={FaGithub}>
             <Link
-              href={siteMetaData.githubUrl}
-            >{`${siteMetaData.username}(Github)`}</Link>
+              href={siteMetadata.githubUrl}
+            >{`${siteMetadata.username}(Github)`}</Link>
           </ProfileInfo>
           <ProfileInfo Icon={ImBlogger}>
             <Link
-              href={siteMetaData.blogUrl}
-            >{`${siteMetaData.username}(Blog)`}</Link>
+              href={siteMetadata.blogUrl}
+            >{`${siteMetadata.username}(Blog)`}</Link>
           </ProfileInfo>
         </CardContent>
         <CardFooter className="flex justify-end">

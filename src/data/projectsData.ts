@@ -1,13 +1,22 @@
 import { TProjectData } from "@/types/ProjectData";
 
-export const projectList: TProjectData[] = [
+export const projectsData: TProjectData[] = [
+  {
+    name: "Security Gym",
+    description:
+      "침해사고가 발생했을 시 즉각적인 대응을 위한 훈련 시스템입니다.",
+    content:
+      "기업에 침해사고 발생시 즉각적인 대응(Incident Response)을 위한 시스템입니다. BoB에서 진행한 5인 프로젝트로 시스템 구축과 포렌식을 맡아서 했습니다. 처음 진행한 협업 프로젝트이기에 의미가 큽니다. PHP와 Flask를 이용하여 서버를 개발했고 Docker와 VMware로 가상환경을 구현했습니다.",
+    techStack: ["PHP", "Flask", "Mysql"],
+    date: "2017.09. ~ 2017.12.",
+  },
   {
     name: "추신사",
     description:
       "사용자의 성별, 키, 몸무게 정보를 이용하여 의류를 추천하는 웹 애플리케이션입니다.",
     content:
       "현재 존재하는 온라인 의류 쇼핑몰은 구매 이력, 상품 클릭 여부, 나이 등을 종합하여 개인에게 의류를 추천해 주는 쇼핑몰 입니다. 5명이서 진행한 프로젝트로 전반적인 프론트엔드와 백엔드의 전반적인 개발을 맡았습니다. 처리하는 데이터양이 방대하여 데이터베이스를 설계할때 정규화에 집중했습니다. 열정적인 팀원들과 함께 개발하며 협업의 재미를 느낄 수 있었던 프로젝트입니다.",
-    techStack: ["Next.js", "FastAPI", "Mysql"],
+    techStack: ["Next.js", "Bootstrap", "Sass", "FastAPI", "Mysql"],
     date: "2022.04. ~ 2022.11.",
     images: ["/images/projects/chusinsa/chusinsa.png"],
     github: ["https://github.com/79841/chusinsa-front"],
@@ -17,7 +26,14 @@ export const projectList: TProjectData[] = [
     description: "척수 장애인을 위한 건강관리 앱 입니다.",
     content:
       "척수 장애인들에게 건강 관리를 위한 프로젝트를 제공하고 간편하게 상담할 수 있는 모바일 앱입니다. 사용자용과 관리자용으로 두가지 앱을 개발하고 백엔드까지 개발한 1인 프로젝트입니다. 사용자들의 과제 수행도를 확인하기 위한 대시보드와 상담을 위한 실시간 채팅 기능을 만들었습니다. 처음으로 진행한 플러터 프로젝트이면서 웹 소켓을 이용한 채팅 프로그램에 깊은 이해를 갖게 되어 의미가 있습니다.",
-    techStack: ["Flutter", "FastAPI", "Mysql", "Redis"],
+    techStack: [
+      "Flutter",
+      "Syncfusion flutter charts",
+      "Web socket channel",
+      "FastAPI",
+      "Mysql",
+      "Redis",
+    ],
     date: "2023.06. ~ 2023.10.",
     images: [
       "/images/projects/letsdo/letsdo_1.png",
@@ -36,17 +52,15 @@ export const projectList: TProjectData[] = [
     description: "서로의 꿈을 공유하는 앱입니다.",
     content:
       "꿈 일기를 작성하고 공유하는 앱입니다. 현재 개발 중인 3인 프로젝트로 웹과 앱 개발을 동시에 진행하고 있습니다. 프론트엔드와 앱 개발을 맡고 있으며 백엔드는 코드리뷰로 참여하고 있습니다. Jira와 Slack을 통해 협업하고 있으면 Agile 방법론으로 개발하고 있습니다. 프로젝트 초기부터 체계적으로 설계한 프로젝트이고 Slack과 코드리뷰를 통해 적극적인 협업 중인 프로젝트이기에 의미가 큽니다. 또한 카카오와 구글 등의 소셜로그인을 구현하면서 OAuth와 OIDC에 대한 개념을 다질 수 있었습니다.",
-    techStack: ["Next.js", "Recoil", "Flutter", "Spring Boot", "Mysql"],
+    techStack: [
+      "Next.js",
+      "Recoil",
+      "Styled components",
+      "Flutter",
+      "Spring Boot",
+      "Mysql",
+    ],
     date: "2023.10. ~ ",
     github: ["https://github.com/Dream-share"],
-  },
-  {
-    name: "Security Gym",
-    description:
-      "침해사고가 발생했을 시 즉각적인 대응을 위한 훈련 시스템입니다.",
-    content:
-      "기업에 침해사고 발생시 즉각적인 대응(Incident Response)을 위한 시스템입니다. BoB에서 진행한 5인 프로젝트로 시스템 구축과 포렌식을 맡아서 했습니다. 처음 진행한 협업 프로젝트이기에 의미가 큽니다. PHP와 Flask를 이용하여 서버를 개발했고 Docker와 VMware로 가상환경을 구현했습니다.",
-    techStack: ["PHP", "Flask", "Mysql"],
-    date: "2017.09. ~ 2017.12.",
   },
 ];

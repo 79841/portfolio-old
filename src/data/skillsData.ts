@@ -1,6 +1,6 @@
 import { TSkillData } from "@/types/SkillData";
 
-export const skillList: Record<string, Record<string, TSkillData>> = {
+export const skillsData: Record<string, Record<string, TSkillData>> = {
   frontEnd: {
     javascript: {
       name: "Javascript",

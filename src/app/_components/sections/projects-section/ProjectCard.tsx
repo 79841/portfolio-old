@@ -4,11 +4,11 @@ import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import { FaGithub } from "react-icons/fa";
 import Link from "next/link";
-import { siteMetaData } from "@/data";
 
 type TProjectDataProps = {
   project: TProjectData;
 };
+
 export const ProjectCard = ({ project }: TProjectDataProps) => {
   return (
     <SimpleBox className="flex max-w-[100%] items-center justify-center gap-12 sm:flex-row">
@@ -40,7 +40,7 @@ export const ProjectCard = ({ project }: TProjectDataProps) => {
             </div>
             <div className="flex flex-wrap items-center gap-2">
               {project.github.map((githubUrl) => (
-                <Badge key={githubUrl}>
+                <Badge key={githubUrl} variant={"outline"}>
                   <Link href={githubUrl}>{githubUrl.split("/").at(-1)}</Link>
                 </Badge>
               ))}
@@ -49,7 +49,7 @@ export const ProjectCard = ({ project }: TProjectDataProps) => {
         )}
         <div className="flex flex-wrap gap-2">
           {project.techStack.map((tech) => (
-            <Badge key={tech} variant="secondary">
+            <Badge variant={"secondary"} key={tech}>
               {tech}
             </Badge>
           ))}

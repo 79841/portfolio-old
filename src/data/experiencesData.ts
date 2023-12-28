@@ -1,6 +1,6 @@
 import { TExperienceData } from "@/types/ExperienceData";
 
-export const experienceList: TExperienceData[] = [
+export const experiencesData: TExperienceData[] = [
   {
     title: "BOB 차세대 보안리더 양성프로그램",
     content: "취약점 분석 및 시큐리티짐 프로젝트 진행",

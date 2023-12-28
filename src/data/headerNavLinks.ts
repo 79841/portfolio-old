@@ -1,4 +1,4 @@
-export const siteMap = {
+export const headerNavLinks = {
   home: "/#home",
   skills: "/#skills",
   experience: "/#experience",

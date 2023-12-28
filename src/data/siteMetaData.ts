@@ -1,8 +1,8 @@
-import { experienceList } from "./experienceList";
-import { projectList } from "./projectList";
-import { skillList } from "./skillList";
-
-export const siteMetaData = {
+export const siteMetadata = {
+  title: "LEtMeDEv",
+  description: "LEtMeDEv's portfolio",
+  socialBanner: "/images/twitter-card.png",
+  siteUrl: "https://79841.github.io",
   name: "명인지",
   university: "서울과학기술대학교",
   major: "산업정보시스템",
@@ -15,7 +15,4 @@ export const siteMetaData = {
   blogUrl: "https://letmedev.vercel.app",
   githubUsername: "79841",
   username: "LEtMeDEv",
-  skills: skillList,
-  experiences: experienceList,
-  projects: projectList,
 };
