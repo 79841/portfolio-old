@@ -9,14 +9,18 @@ import {
 } from "@/components/ui/card";
 import { ProfileImage } from "./ProfileImage";
 
-import { MouseEventHandler, useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
-import { BlurCard } from "./BluredCard";
+import { MouseEventHandler } from "react";
+import { FlipButton } from "./FlipButton";
 
 type TProfileCardBackWard = {
   isFlipped: boolean;
+  handleFilp: MouseEventHandler<HTMLButtonElement>;
 };
-export const ProfileCardBackward = ({ isFlipped }: TProfileCardBackWard) => {
+export const ProfileCardBackward = ({
+  isFlipped,
+  handleFilp,
+}: TProfileCardBackWard) => {
   return (
     <div
       className={cn(
@@ -24,7 +28,6 @@ export const ProfileCardBackward = ({ isFlipped }: TProfileCardBackWard) => {
         isFlipped ? "[transform:rotateY(0deg)]" : "",
       )}
     >
-      <BlurCard>Go front</BlurCard>
       <Card className="w-fit sm:w-[350px]">
         <CardHeader>
           <ProfileImage />
@@ -68,7 +71,9 @@ export const ProfileCardBackward = ({ isFlipped }: TProfileCardBackWard) => {
             </h3>
           </div>
         </CardContent>
-        <CardFooter className="flex justify-between"></CardFooter>
+        <CardFooter className="flex justify-end">
+          <FlipButton onClick={handleFilp} value="Go front" />
+        </CardFooter>
       </Card>
     </div>
   );

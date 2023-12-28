@@ -7,7 +7,7 @@ type TProfileInfo = {
 export const ProfileInfo = ({ children, Icon }: TProfileInfo) => {
   return (
     <div className="flex">
-      <div className="w-8">
+      <div className="flex h-6 w-8 items-center">
         <Icon />
       </div>
       {children}

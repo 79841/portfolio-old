@@ -17,12 +17,19 @@ import { siteMetaData } from "@/data/siteMetaData";
 import { FaCalendar } from "react-icons/fa6";
 import { MdEmail, MdPlace } from "react-icons/md";
 import Link from "next/link";
-import { BlurCard } from "./BluredCard";
+import { MouseEventHandler } from "react";
+import { FlipButton } from "./FlipButton";
+import { FaGithub } from "react-icons/fa";
+import { ImBlogger } from "react-icons/im";
 
 type TProfileCardForward = {
   isFlipped: boolean;
+  handleFilp: MouseEventHandler<HTMLButtonElement>;
 };
-export const ProfileCardForward = ({ isFlipped }: TProfileCardForward) => {
+export const ProfileCardForward = ({
+  isFlipped,
+  handleFilp,
+}: TProfileCardForward) => {
   return (
     <div
       className={cn(
@@ -30,7 +37,6 @@ export const ProfileCardForward = ({ isFlipped }: TProfileCardForward) => {
         isFlipped ? "[transform:rotateY(180deg)]" : "",
       )}
     >
-      <BlurCard>Go back</BlurCard>
       <Card className="sm:w-[350px]">
         <CardHeader>
           <ProfileImage />
@@ -57,14 +63,24 @@ export const ProfileCardForward = ({ isFlipped }: TProfileCardForward) => {
             <div>{siteMetaData.address}</div>
           </ProfileInfo>
           <ProfileInfo Icon={MdEmail}>
-            <div>
-              <Link href={`mailto:${siteMetaData.primaryEmail}`}>
-                {siteMetaData.primaryEmail}
-              </Link>
-            </div>
+            <Link href={`mailto:${siteMetaData.primaryEmail}`}>
+              {siteMetaData.primaryEmail}
+            </Link>
+          </ProfileInfo>
+          <ProfileInfo Icon={FaGithub}>
+            <Link
+              href={siteMetaData.githubUrl}
+            >{`${siteMetaData.username}(Github)`}</Link>
+          </ProfileInfo>
+          <ProfileInfo Icon={ImBlogger}>
+            <Link
+              href={siteMetaData.blogUrl}
+            >{`${siteMetaData.username}(Blog)`}</Link>
           </ProfileInfo>
         </CardContent>
-        <CardFooter className="flex justify-between"></CardFooter>
+        <CardFooter className="flex justify-end">
+          <FlipButton onClick={handleFilp} value="Go back" />
+        </CardFooter>
       </Card>
     </div>
   );
