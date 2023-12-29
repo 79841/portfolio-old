@@ -15,4 +15,6 @@ export const siteMetadata = {
   blogUrl: "https://letmedev.vercel.app",
   githubUsername: "79841",
   username: "LEtMeDEv",
+  language: "ko",
+  locale: "ko_KR",
 };
