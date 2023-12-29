@@ -11,7 +11,7 @@ export const SimpleBox = forwardRef<HTMLDivElement, TSimpleBoxProps>(
       <div
         ref={ref}
         className={cn(
-          "flex w-fit flex-col rounded-lg border bg-background p-4 shadow sm:p-8",
+          "flex w-fit flex-col rounded-lg border p-4 shadow sm:p-8",
           className,
         )}
         {...props}
