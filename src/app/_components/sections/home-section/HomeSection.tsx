@@ -12,10 +12,8 @@ export const HomeSection = () => {
             <div className="flex flex-col items-end justify-start sm:flex-[1]">
               <ProfileCard />
             </div>
-            <div className="flex flex-col gap-8 overflow-x-hidden overflow-y-visible pt-8 sm:flex-[2]  min-[1800px]:overflow-visible">
-              <div>
-                <Preview />
-              </div>
+            <div className="flex flex-col overflow-x-hidden overflow-y-visible pt-24 sm:flex-[2] min-[1800px]:overflow-visible">
+              <Preview />
             </div>
           </div>
         </div>
