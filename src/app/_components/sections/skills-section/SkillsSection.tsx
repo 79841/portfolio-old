@@ -15,7 +15,7 @@ export const SkillsSection = () => {
       <div className="flex flex-col sm:gap-24">
         <SkillsSectionBanner />
         <div className="w-full py-24">
-          <div className="flex flex-col justify-evenly gap-24">
+          <div className="flex flex-col justify-evenly gap-16">
             <div className="flex-[1]">
               <FrontEndSkills />
             </div>
