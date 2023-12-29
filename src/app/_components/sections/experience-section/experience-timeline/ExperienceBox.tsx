@@ -8,7 +8,7 @@ type TExperienceBoxProps = {
 };
 export const ExperienceBox = ({ experience }: TExperienceBoxProps) => {
   return (
-    <SimpleBox className="h-full w-full flex-[1] flex-row items-center gap-4 sm:gap-6 xl:max-w-[35rem]">
+    <SimpleBox className="h-full w-full flex-[1] flex-row items-center gap-4 bg-primary-foreground sm:gap-6 xl:max-w-[35rem]">
       <div className="relative min-h-12 min-w-12 overflow-hidden rounded-lg sm:h-20 sm:w-20">
         {experience.image && (
           <Image
