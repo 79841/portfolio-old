@@ -1,12 +1,21 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Noto_Sans_KR, Ubuntu } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/providers/theme/theme-provider";
 import { Header } from "@/app/_components/header";
 import { Footer } from "./_components/footer";
 import { siteMetadata } from "@/data";
 
-const inter = Inter({ subsets: ["latin"] });
+const ubuntu = Ubuntu({
+  display: "swap",
+  subsets: ["latin"],
+  weight: "400",
+});
+
+const noto_sans_korean = Noto_Sans_KR({
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteMetadata.siteUrl),
@@ -17,7 +26,7 @@ export const metadata: Metadata = {
     description: siteMetadata.description,
     siteName: siteMetadata.title,
     images: [siteMetadata.socialBanner],
-    locale: "ko_KR",
+    locale: siteMetadata.locale,
     type: "website",
   },
 };
@@ -28,8 +37,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className={inter.className}>
+    <html lang={siteMetadata.language} className="scroll-smooth">
+      <body className={`${ubuntu.className} ${noto_sans_korean.className}`}>
         <ThemeProvider attribute="class" enableSystem disableTransitionOnChange>
           <Header />
           {children}
