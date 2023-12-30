@@ -4,7 +4,7 @@ export const TanstackQueryCard = () => {
   return (
     <>
       <ImageCardWithTooltip
-        defaultImage="/images/skills/tanstack-original.png"
+        defaultImage="/images/skills/tanstack-original.avif"
         alt="Tanstack"
       />
     </>

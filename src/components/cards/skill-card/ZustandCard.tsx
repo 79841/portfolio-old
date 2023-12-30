@@ -4,7 +4,7 @@ export const ZustandCard = () => {
   return (
     <>
       <ImageCardWithTooltip
-        defaultImage="/images/skills/bear.jpg"
+        defaultImage="/images/skills/bear.avif"
         alt="Zustand"
       />
     </>

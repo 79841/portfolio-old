@@ -4,7 +4,7 @@ export const TossCard = () => {
   return (
     <>
       <ImageCardWithTooltip
-        defaultImage="/images/experience/toss-logo.png"
+        defaultImage="/images/experience/toss-logo.avif"
         alt="Toss"
         imageStyle="object-contain"
       />
