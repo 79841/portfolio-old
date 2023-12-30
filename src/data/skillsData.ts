@@ -24,20 +24,20 @@ export const skillsData: Record<string, Record<string, TSkillData>> = {
       name: "Next.js",
     },
     recoil: {
-      defaultImage: "/images/skills/recoil-logo.png",
+      defaultImage: "/images/skills/recoil-logo.avif",
       name: "Recoil",
     },
     zustand: {
       name: "Zustand",
-      defaultImage: "/images/skills/bear.jpg",
+      defaultImage: "/images/skills/bear.avif",
     },
     tanstackQuery: {
-      defaultImage: "/images/skills/tanstack-original.png",
+      defaultImage: "/images/skills/tanstack-original.avif",
       name: "Tanstack Query",
     },
     styledComponents: {
       name: "Styled Components",
-      defaultImage: "/images/skills/styled-components-logo.png",
+      defaultImage: "/images/skills/styled-components-logo.avif",
     },
     tailwindcss: {
       defaultImage: "/images/skills/tailwindcss-plain.svg",
@@ -50,21 +50,21 @@ export const skillsData: Record<string, Record<string, TSkillData>> = {
     },
     jest: {
       name: "Jest",
-      defaultImage: "/images/skills/jest-logo.png",
+      defaultImage: "/images/skills/jest-logo.avif",
     },
     testingLibrary: {
-      defaultImage: "/images/skills/testing-library-logo.png",
+      defaultImage: "/images/skills/testing-library-logo.avif",
       name: "Testing Library",
     },
-    msw: { defaultImage: "/images/skills/msw-logo.png", name: "Msw" },
+    msw: { defaultImage: "/images/skills/msw-logo.avif", name: "Msw" },
     prisma: {
-      defaultImage: "/images/skills/prisma-logo.png",
+      defaultImage: "/images/skills/prisma-logo.avif",
       name: "Prisma",
     },
   },
   backEnd: {
     nodejs: {
-      defaultImage: "/images/skills/nodejs-logo.png",
+      defaultImage: "/images/skills/nodejs-logo.avif",
       name: "Node.js",
     },
     express: {
@@ -113,7 +113,7 @@ export const skillsData: Record<string, Record<string, TSkillData>> = {
       name: "Firebase",
     },
     vercel: {
-      defaultImage: "/images/skills/vercel-logo.png",
+      defaultImage: "/images/skills/vercel-logo.avif",
       name: "Vercel",
     },
     docker: {
@@ -149,7 +149,7 @@ export const skillsData: Record<string, Record<string, TSkillData>> = {
       name: "Discord",
     },
     gather: {
-      defaultImage: "/images/skills/gather-logo.png",
+      defaultImage: "/images/skills/gather-logo.avif",
       name: "Gather",
     },
     figma: {
