@@ -17,4 +17,6 @@ export const siteMetadata = {
   username: "LEtMeDEv",
   language: "ko",
   locale: "ko_KR",
+  profilePrimary: "/images/profile/profile-primary.png",
+  profileSecondary: "/images/profile/profile-secondary.png",
 };
