@@ -8,7 +8,7 @@ export function ProfileImage({ src }: TProfileImageProps) {
     <div className="flex w-full justify-center">
       <Avatar className="my-[30px] h-60 w-60">
         <AvatarImage
-          className="bg-primary-foreground object-contain p-4"
+          className="bg-secondary object-contain p-4"
           src={src}
           alt="@shadcn"
         />
