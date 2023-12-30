@@ -7,9 +7,9 @@ const nextConfig = {
         hostname: "**",
       },
     ],
-    // unoptimized: true,
+    unoptimized: true,
   },
-  // output: "export",
+  output: "export",
 };
 
 module.exports = nextConfig;
