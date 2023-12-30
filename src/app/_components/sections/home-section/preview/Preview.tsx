@@ -17,9 +17,12 @@ import {
 } from "@/components/cards/experience-card";
 import Link from "next/link";
 import { headerNavLinks } from "@/data";
+import { FallbackController } from "@/components/fallback-controller/FallbackController";
+import { PreviewSkeleton } from "./PreviewSkeleton";
 
 export const Preview = () => {
   return (
+    // <FallbackController fallback={<PreviewSkeleton />}>
     <div>
       <h1 className="mb-8 ml-1 flex items-center justify-center gap-2 text-2xl font-semibold sm:justify-start">
         <FaBoltLightning />
@@ -53,5 +56,6 @@ export const Preview = () => {
         <GithubCalendarBox />
       </div>
     </div>
+    // </FallbackController>
   );
 };
