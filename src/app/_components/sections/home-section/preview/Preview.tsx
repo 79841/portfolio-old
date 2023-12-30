@@ -17,7 +17,7 @@ import {
 } from "@/components/cards/experience-card";
 import Link from "next/link";
 import { headerNavLinks } from "@/data";
-import { FallbackController } from "@/components/fallback-controller/FallbackController";
+import { FallbackController } from "@/components/fallback-controller";
 import { PreviewSkeleton } from "./PreviewSkeleton";
 
 export const Preview = () => {

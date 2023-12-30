@@ -11,7 +11,7 @@ import { ProfileCardBackward } from "./ProfileCardBackward";
 import { ProfileCardForward } from "./ProfileCardForward";
 import { cn } from "@/lib/utils";
 import { ProfileCardSkeleton } from "./ProfileCardSkeleton";
-import { FallbackController } from "@/components/fallback-controller/FallbackController";
+import { FallbackController } from "@/components/fallback-controller";
 
 export function ProfileCard() {
   const [isFlipped, setIsFlipped] = useState(false);
