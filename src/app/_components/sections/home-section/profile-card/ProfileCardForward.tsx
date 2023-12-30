@@ -39,7 +39,7 @@ export const ProfileCardForward = ({
     >
       <Card className="sm:w-[350px]">
         <CardHeader>
-          <ProfileImage />
+          <ProfileImage src={siteMetadata.profilePrimary} />
           <CardTitle>
             <GradientText content={siteMetadata.username} />
           </CardTitle>

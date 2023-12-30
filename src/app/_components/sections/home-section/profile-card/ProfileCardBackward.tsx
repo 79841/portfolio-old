@@ -12,6 +12,7 @@ import { ProfileImage } from "./ProfileImage";
 import { cn } from "@/lib/utils";
 import { MouseEventHandler } from "react";
 import { FlipButton } from "./FlipButton";
+import { siteMetadata } from "@/data";
 
 type TProfileCardBackWard = {
   isFlipped: boolean;
@@ -30,7 +31,7 @@ export const ProfileCardBackward = ({
     >
       <Card className="w-fit sm:w-[350px]">
         <CardHeader>
-          <ProfileImage />
+          <ProfileImage src={siteMetadata.profileSecondary} />
           <CardTitle>저는...</CardTitle>
           <CardDescription>
             보안전문가에서 프론트엔드 개발자로..
