@@ -8,7 +8,7 @@ type TExperienceBoxProps = {
 };
 export const ExperienceBox = ({ experience }: TExperienceBoxProps) => {
   return (
-    <SimpleBox className="h-full w-full flex-[1] flex-row items-center gap-4 bg-primary-foreground sm:gap-6 xl:max-w-[35rem]">
+    <SimpleBox className="h-full w-full flex-[1] flex-row items-center gap-4 sm:gap-6 xl:max-w-[35rem]">
       <div className="relative min-h-12 min-w-12 overflow-hidden rounded-lg sm:h-20 sm:w-20">
         {experience.image && (
           <Image
@@ -20,15 +20,19 @@ export const ExperienceBox = ({ experience }: TExperienceBoxProps) => {
         )}
       </div>
       <div>
-        <div className="text-base font-semibold tracking-tighter sm:text-xl">
-          {experience.title}
-        </div>
-        {experience.content && (
-          <div className="text-sm text-muted-foreground">
-            {experience.content}
+        <div className="mb-1">
+          <div className="text-sm font-semibold tracking-tighter sm:text-lg">
+            {experience.title}
           </div>
-        )}
-        <div className="text-sm text-muted-foreground">{experience.period}</div>
+          {experience.content && (
+            <div className="text-xs text-muted-foreground sm:text-sm">
+              {experience.content}
+            </div>
+          )}
+        </div>
+        <div className="text-xs text-muted-foreground sm:text-sm">
+          {experience.period}
+        </div>
       </div>
     </SimpleBox>
   );
