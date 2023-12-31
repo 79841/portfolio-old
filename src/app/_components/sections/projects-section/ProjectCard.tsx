@@ -15,11 +15,11 @@ const ProjectGithubUrls = ({ githubUrls }: TProjectGithubUrlsProps) => {
       {typeof githubUrls !== "undefined" && (
         <div className="flex gap-2">
           <div className="flex h-[22px] items-center">
-            <FaGithub className="text-xl" />
+            <FaGithub className="text-2xl" />
           </div>
           <div className="flex flex-wrap items-center gap-2">
             {githubUrls.map((githubUrl) => (
-              <Badge key={githubUrl} variant={"outline"}>
+              <Badge key={githubUrl}>
                 <Link href={githubUrl}>{githubUrl.split("/").at(-1)}</Link>
               </Badge>
             ))}
@@ -37,7 +37,7 @@ const ProjectTechStack = ({ techStack }: TProjectTechStackProps) => {
   return (
     <div className="flex flex-wrap gap-2">
       {techStack.map((tech) => (
-        <Badge variant={"secondary"} key={tech}>
+        <Badge variant={"outline"} key={tech}>
           {tech}
         </Badge>
       ))}
