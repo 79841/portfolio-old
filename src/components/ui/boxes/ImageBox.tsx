@@ -37,7 +37,6 @@ export const ImageBox = memo(function ImageBox({
         fill
         alt={alt}
         className={cn("object-cover", imageStyle)}
-        // sizes="100vw"
       />
     </div>
   );
