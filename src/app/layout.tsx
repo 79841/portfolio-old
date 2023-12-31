@@ -15,6 +15,7 @@ const ubuntu = Ubuntu({
 const noto_sans_korean = Noto_Sans_KR({
   subsets: ["latin"],
   display: "swap",
+  weight: "400",
 });
 
 export const metadata: Metadata = {
