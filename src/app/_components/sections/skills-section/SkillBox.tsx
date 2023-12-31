@@ -10,9 +10,9 @@ export const SkillBox = ({ name, ...props }: TSkillBoxProps) => {
       <div className="flex justify-center rounded-lg duration-500 hover:relative hover:-translate-y-2">
         <ImageBox {...props} alt={name} />
       </div>
-      <Textfit mode="single" max={12} className="text-muted-foreground">
+      <div className="text-nowrap text-xs text-secondary-foreground">
         {name}
-      </Textfit>
+      </div>
     </div>
   );
 };
