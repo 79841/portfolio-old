@@ -13,6 +13,7 @@ export function ProfileImage({ src }: TProfileImageProps) {
           className="object-contain"
           fill
           priority
+          sizes="100vw"
         />
       </div>
     </div>
